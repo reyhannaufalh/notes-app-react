@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #171717;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: white;
+}
+
+@layer components {
+  .title {
+    @apply text-2xl mb-6 text-center font-semibold;
+  }
+
+  .input-main {
+    @apply px-4 py-3 bg-neutral-700 rounded-lg w-full;
+  }
+}
